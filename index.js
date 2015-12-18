@@ -15,7 +15,7 @@ var Module = (function () {
           return args[i]; //do not cast to jq, because we can't assume that it exists
         }
       }
-      throw new Error('Must have element to bind controller');
+      throw new Error('Must have element to bind controller' + args.toString());
     }
 
     /**
